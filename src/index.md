@@ -1,5 +1,5 @@
 ---
-title: My Static Site & Blog
+title: Workground home
 layout: layout.html
 ---
 
