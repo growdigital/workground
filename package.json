@@ -1,6 +1,6 @@
 {
-  "name": "static-site-example",
-  "private": true,
+  "name": "workground",
+  "private": false,
   "dependencies": {
     "handlebars": "^4.0.5",
     "metalsmith": "^2.1.0",
@@ -22,6 +22,11 @@
     "semantic-release": "^11.0.1"
   },
   "scripts": {
+    "start": "node index.js",
+    "dev":
+      "npm run browser_sync & NODE_ENV=development nodemon --exec 'npm start && browser-sync reload'",
+    "browser_sync": "browser-sync start --server build",
+    "build": "npm start",
     "semantic-release":
       "semantic-release pre && npm publish && semantic-release post"
   },
