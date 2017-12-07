@@ -18,12 +18,19 @@
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "semantic-release": "^8.2.0"
   },
   "scripts": {
     "start": "node index.js",
     "dev": "npm run browser_sync & NODE_ENV=development nodemon --exec 'npm start && browser-sync reload'",
     "browser_sync": "browser-sync start --server build",
-    "build": "npm start"
+    "build": "npm start",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "version": "0.0.0-development",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/growdigital/workground.git"
   }
 }
